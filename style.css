@@ -1,0 +1,55 @@
+* {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+#countLabel {
+  display: inline-block;
+  font-size: 50px;
+  background-color: teal;
+  color: rgba(157, 238, 238, 0.733);
+  border-radius: 45px;
+  text-align: center;
+  grid-column: 1 / -1;
+  width: 400px;
+  margin-left: 200px;
+}
+/* .count {
+} */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 15px;
+}
+.button {
+  display: flex;
+  column-gap: 30px;
+}
+button {
+  border-radius: 45px;
+  background-color: rgba(224, 209, 175, 0.158);
+}
+
+button:hover {
+  background-color: teal;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(2, 59, 59);
+  color: bisque;
+}
+
+#increaseBtn:active {
+  cursor: zoom-in;
+}
+
+#decreaseBtn:active {
+  cursor: zoom-out;
+}
+
+#resetBtn:active {
+  cursor: default;
+}
